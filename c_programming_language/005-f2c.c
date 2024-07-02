@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int f;
     printf("F\tC\n");
     for (f = 0; f <= 300; f = f + 20)
