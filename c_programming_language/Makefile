@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -33,5 +33,19 @@ prep:
 	cc 014-replace_multiple_blanks.c -o ./bin/014-replace_multiple_blanks
 015:
 	cc 015-copy_input_replace_with_backslashes.c -o ./bin/015-copy_input_replace_with_backslashes
+016:
+	cc 016-word_counting.c -o ./bin/016-word_counting
+017:
+	cc 017-test_word_counting.c -o ./bin/017-test_word_counting
+018:
+	cc 018-one_word_per_line.c -o ./bin/018-one_word_per_line
+019:
+	cc 019-arrays.c -o ./bin/019-arrays
+020:
+	cc 020-histogram_horizontal.c -o ./bin/020-histogram_horizontal
+021:
+	cc 021-histogram_vertical.c -o ./bin/021-histogram_vertical
+022:
+	cc 022-histogram_character.c -o ./bin/022-histogram_character
 clean:
 	rm -rf ./bin/*
