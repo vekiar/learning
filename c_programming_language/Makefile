@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -47,5 +47,13 @@ prep:
 	cc 021-histogram_vertical.c -o ./bin/021-histogram_vertical
 022:
 	cc 022-histogram_character.c -o ./bin/022-histogram_character
+023:
+	cc 023-functions.c -o ./bin/023-functions
+024:
+	cc 024-f2c_function.c -o ./bin/024-f2c_function
+025:
+	cc 025-pass_by_value.c -o ./bin/025-pass_by_value
+026:
+	cc 026-pass_by_reference.c -o ./bin/026-pass_by_reference
 clean:
 	rm -rf ./bin/*
