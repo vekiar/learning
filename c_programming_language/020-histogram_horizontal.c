@@ -23,10 +23,12 @@ int main()
     }
 
     for (i = 0; i < WORD_LENGTHS; i++) {
-        printf("%d:\t", i);
-        for (int j = 0; j < words[i]; j++)
-            printf("|");
-        printf(" (%d)\n", words[i]);
+            if (words[i] > 0) {
+            printf("%d:\t", i);
+            for (int j = 0; j < words[i]; j++)
+                printf("|");
+            printf("\n");
+        }
     }
     return 0;
 }
