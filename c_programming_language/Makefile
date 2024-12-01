@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -57,5 +57,11 @@ prep:
 	cc 026-pass_by_reference.c -o ./bin/026-pass_by_reference
 027:
 	cc 027-longest_line.c -o ./bin/027-longest_line
+028:
+	cc 028-longest_line_stats.c -o ./bin/028-longest_line_stats
+029:
+	cc 029-longer_80_chars.c -o ./bin/029-longer_80_chars
+030:
+	cc 030-remove_blanks_tabs.c -o ./bin/030-remove_blanks_tabs
 clean:
 	rm -rf ./bin/*
