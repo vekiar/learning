@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -65,5 +65,7 @@ prep:
 	cc 030-remove_blanks_tabs.c -o ./bin/030-remove_blanks_tabs
 031:
 	cc 031-reverse_string.c -o ./bin/031-reverse_string
+032:
+	cc 032-detab.c -o ./bin/032-detab
 clean:
 	rm -rf ./bin/*
