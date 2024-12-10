@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -67,5 +67,7 @@ prep:
 	cc 031-reverse_string.c -o ./bin/031-reverse_string
 032:
 	cc 032-detab.c -o ./bin/032-detab
+033:
+	cc 033-entab.c -o ./bin/033-entab
 clean:
 	rm -rf ./bin/*
