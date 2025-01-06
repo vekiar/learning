@@ -1,6 +1,6 @@
 /*
     Exercise 1.21
-    Write a program <entab> that replaces strings of blanks by the minimum of tabs and blanks to avhieve the same spacing.
+    Write a program <entab> that replaces strings of blanks by the minimum of tabs and blanks to achieve the same spacing.
     Use the same tab stops as in <detab>.
 */
 
