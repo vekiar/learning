@@ -1,0 +1,2 @@
+# Introduction to Computation and Programming Using Python
+Based off the book "Introduction to Computation and Programming Using Python, Third Edition" by John Guttag. This is the book used in MIT's introductory programming courses.
