@@ -1,0 +1,2 @@
+# Introduction to Computation and Programming Using Python
+Re-learning Python "the MIT way". Based off the book "Introduction to Computation and Programming Using Python, Third Edition" by John Guttag. This is the book used in MIT's introductory programming courses (6.00, 6.0001, 6.0002 according to [OCW](https://ocw.mit.edu/search/?d=Electrical%20Engineering%20and%20Computer%20Science&s=department_course_numbers.sort_coursenum)).  
