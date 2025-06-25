@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -131,5 +131,17 @@ prep:
 	cc 063-itoa_padded.c -o ./bin/063-itoa_padded -lm
 064:
 	cc 064-functions.c -o ./bin/064-functions -lm
+065:
+	cc 065-strindex_rightmost.c -o ./bin/065-strindex_rightmost -lm
+066:
+	cc 066-atof.c -o ./bin/066-atof -lm
+067:
+	cc 067-atof_scientific.c -o ./bin/067-atof_scientific -lm
+068:
+	cc 068-stack_naive.c -o ./bin/068-stack_naive -lm
+069:
+	cc 069-calculator.c -o ./bin/069-calculator -lm
+070:
+	cc 070-stack_calculator.c -o ./bin/070-stack_calculator -lm
 clean:
 	rm -rf ./bin/*
