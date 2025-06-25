@@ -31,8 +31,7 @@ int most_recently_printed = 0;
 
 int main()
 {
-    while ((getlines(line, MAXLINE) > 0)) { // this will never escape becuase we are inserting '\0' into the array
-        // parse line
+    while ((getlines(line, MAXLINE) > 0)) { // this will never escape because we are inserting '\0' into the array
         parse(line, stack);
         // return result from line (if any)
         ;
@@ -43,15 +42,6 @@ int main()
 
 void parse(char line[], int stack[])
 {
-    // parse the input array from 0 to n
-    // while char is a number, convert it, push it to the stack
-    // (Reverse Polish Calculator)
-    // when char is an operator
-    //  - check number of operands
-    //  - check that operator supports number of operands
-    //  - perform operation (or raise exception)
-    //      - pop operands from stack
-    //      - push result into stack
     int i, r, sign = 1;
     char operator;
     for (i = 0; line[i] != '\0'; i++) {
