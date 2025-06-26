@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -143,5 +143,20 @@ prep:
 	cc 069-calculator.c -o ./bin/069-calculator -lm
 070:
 	cc 070-stack_calculator.c -o ./bin/070-stack_calculator -lm
+071:
+	cc 071-calc.h 071-main.c 071-getop.c 071-stack.c 071-getch.c -o ./bin/071-calculator_skeleton -lm
+072:
+	cc 072-static_test.h 072-main.c 072-static_methods_variables.c -o ./bin/072-static_test -lm
+073:
+	cc 073-printd.c -o ./bin/073-printd -lm
+074:
+	cc 074-qsort.c -o ./bin/074-qsort -lm
+075:
+	cc 075-printd.c -o ./bin/075-printd -lm
+076:
+	cc 076-reverse.c -o ./bin/076-reverse -lm
+077:
+	# cc 077-macro_swap.c -o ./bin/077-macro_swap -lm
+	cc 077-macro_swap_gpt.c -o ./bin/077-macro_swap_gpt -lm
 clean:
 	rm -rf ./bin/*
