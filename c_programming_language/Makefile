@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077 078 079 080 081 082 083 084 085
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -156,7 +156,26 @@ prep:
 076:
 	cc 076-reverse.c -o ./bin/076-reverse -lm
 077:
-	# cc 077-macro_swap.c -o ./bin/077-macro_swap -lm
 	cc 077-macro_swap_gpt.c -o ./bin/077-macro_swap_gpt -lm
+078:
+	cc 078-pointers.c -o ./bin/078-pointers -lm
+079:
+	cc 079-getint.c -o ./bin/079-getint -lm
+080:
+	cc 080-getint_exercise1.c -o ./bin/080-getint_exercise1 -lm
+081:
+	cc 081-getfloat.c -o ./bin/081-getfloat -lm
+	cc 081-float_testing.c -o ./bin/081-float_testing -lm
+082:
+	cc 082-strlen.c -o ./bin/082-strlen -lm
+	cc 082-slice_testing.c -o ./bin/082-slice_testing -lm
+083:
+	cc 083-allocbuf.c -o ./bin/083-allocbuf -lm
+	cc 083-allocbuf_float.c -o ./bin/083-allocbuf_float -lm
+	cc 083-more_strlen.c -o ./bin/083-more_strlen -lm
+084:
+	cc 084-main.c 084-slice.c -o ./bin/084-main -lm
+085:
+	cc 085-strcopy.c -o ./bin/085-strcopy -lm
 clean:
 	rm -rf ./bin/*
