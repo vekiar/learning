@@ -1,4 +1,4 @@
-all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077 078 079 080 081 082 083 084 085
+all: clean prep 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077 078 079 080 081 082 083 084 085 086 087 088 089 090 091 092
 
 prep:
 	if [ ! -d ./bin ]; then mkdir ./bin/; else echo "./bin detected, skipping creation..."; fi
@@ -177,5 +177,28 @@ prep:
 	cc 084-main.c 084-slice.c -o ./bin/084-main -lm
 085:
 	cc 085-strcopy.c -o ./bin/085-strcopy -lm
+	cc 085-strcompare.c -o ./bin/085-strcompare -lm
+086:
+	cc 086-strcat.c -o ./bin/086-strcat -lm
+087:
+	cc 087-strend.c -o ./bin/087-strend -lm
+088:
+	cc 088-strncpy.c -o ./bin/088-strncpy -lm
+	cc 088-strncat.c -o ./bin/088-strncat -lm
+	cc 088-strncmp.c -o ./bin/088-strncmp -lm
+089:
+	cc 089-getline_pointer.c -o ./bin/089-getline_pointer -lm
+	cc 089-atoi_pointer.c -o ./bin/089-atoi_pointer -lm
+	cc 089-itoa_pointer.c -o ./bin/089-itoa_pointer -lm
+	cc 089-strindex_pointer.c -o ./bin/089-strindex_pointer -lm
+	cc 089-getop_pointer.c -o ./bin/089-getop_pointer -lm
+090:
+	cc 090-sort_pointer.c -o ./bin/090-sort_pointer -lm
+	cc 090-sort_pointer_2.c -o ./bin/090-sort_pointer_2 -lm
+091:
+	cc 091-pointer_array.c -o ./bin/091-pointer_array -lm
+	cc 091-array_main.c -o ./bin/091-array_main -lm
+092:
+	cc 092-md_array.c -o ./bin/092-md_array -lm
 clean:
 	rm -rf ./bin/*
